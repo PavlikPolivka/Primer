@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch style.scss:style.min.css --style compressed
+ *
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+
+
+/**
+ * Setup
+ */
+@import "vars";
+
+
+@import "src/1-base",
+		"src/2-layout",
+		"src/3-states",
+		"src/4-theme";
+
+/**
+ * She’s all yours, cap’n... Begin importing your stuff below.
+ */
+@import "src/modules/cover";
+//@import "src/plugins/example";
+
+/*===== yeoman styles-hook do-not-remove =====*/

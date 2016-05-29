@@ -1,0 +1,9 @@
+.cover {
+    @extend .page;
+    margin: 15px;
+}
+
+.cover h1 {
+    margin: 2em 0;
+    vertical-align: middle;
+}
