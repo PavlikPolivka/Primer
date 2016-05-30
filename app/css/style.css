@@ -6,8 +6,6 @@
  *
  * sass --watch style.scss:style.min.css --style compressed
  *
- * Here we pull in some variables, include the inuit.css framework, then add our
- * project-specific components afterwards.
  */
 /**
  * Setup
@@ -45,8 +43,9 @@ html, body {
   left: 0;
   right: 0;
   margin: 20px 25px;
-  padding: 30px;
+  padding: 40px;
   background-color: #fff;
+  border-radius: 0 10px 10px 0;
 }
 
 /* line 5, src/_4-theme.scss */
@@ -79,14 +78,55 @@ html, body {
 /* line 1, src/modules/_cover.scss */
 .cover {
   margin: 15px;
+  box-shadow: inset 4px 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 6, src/modules/_cover.scss */
+/* line 7, src/modules/_cover.scss */
+.cover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+}
+
+/* line 18, src/modules/_cover.scss */
 .cover h1 {
-  margin: 2em 0;
+  position: absolute;
+  top: 65%;
   vertical-align: middle;
+  font-family: 'Chunkfive';
+  font-size: 60px;
+  color: #CACA96;
 }
 
+/* line 27, src/modules/_cover.scss */
+.cover h2 {
+  position: absolute;
+  top: 75%;
+  vertical-align: middle;
+  font-family: 'Chunkfive';
+  font-size: 25px;
+  color: #CACA96;
+}
+
+/* line 36, src/modules/_cover.scss */
+.cover h3 {
+  position: absolute;
+  top: 93%;
+  right: 3%;
+  font-family: 'Chunkfive';
+  font-size: 20px;
+  color: #CACA96;
+}
+
+@font-face {
+  font-family: Chunkfive;
+  src: url("font/Chunkfive.otf") format("opentype");
+}
 /*===== yeoman styles-hook do-not-remove =====*/
 
 /*# sourceMappingURL=style.css.map */

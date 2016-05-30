@@ -1,9 +1,43 @@
 .cover {
     @extend .page;
     margin: 15px;
+    box-shadow: inset 4px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .cover h1 {
-    margin: 2em 0;
+    position: absolute;
+    top: 65%;
     vertical-align: middle;
+    font-family: 'Chunkfive';
+    font-size: 60px;
+    color: $title-color;
+}
+
+.cover h2 {
+    position: absolute;
+    top: 75%;
+    vertical-align: middle;
+    font-family: 'Chunkfive';
+    font-size: 25px;
+    color: $title-color;
+}
+
+.cover h3 {
+    position: absolute;
+    top: 93%;
+    right: 3%;
+    font-family: 'Chunkfive';
+    font-size: 20px;
+    color: $title-color;
 }
